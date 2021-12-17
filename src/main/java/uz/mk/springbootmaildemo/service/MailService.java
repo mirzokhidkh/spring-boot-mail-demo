@@ -50,10 +50,10 @@ public class MailService {
     public ApiResponse sendHtml(String email) {
         try {
             Map<String, Object> model = new HashMap<>();
-            model.put("email", "mirzohidkhasanov13@gmail.com");
+            model.put("email", "user@gmail.com");
             model.put("fullName", "Xasanov Mirzohid");
             model.put("code", "111111");
-            model.put("phoneNumber", "+998999354112");
+            model.put("phoneNumber", "+99891234567");
             MimeMessage mimeMessage = sender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(
                     mimeMessage, MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED, StandardCharsets.UTF_8.name());
